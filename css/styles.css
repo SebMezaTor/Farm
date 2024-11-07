@@ -1,0 +1,96 @@
+/* Sebastian Meza-Torres
+    GIT 337
+    ASURITE: smezator */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Habibi', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+header {
+    background-color: #06A816;
+    color: #ffffff;
+    padding: 5px;
+    font-family: 'Irish Grover', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+
+}
+
+nav li {
+    display: inline-block;
+    width: 125px;
+    height: 25px;
+
+    
+}
+
+nav h2 {
+    visibility: hidden;
+}
+
+nav a {
+    float: right;
+    background-color: #E75D02;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+    
+    /* Note for myself: I added a text-align center for the h2.*/
+}
+
+h3 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+footer {
+    background-color: #06A816;
+    color: #ffff;
+    padding: 15px;
+
+    
+}
+
+
+
+
+ 
+
+.copyright {
+    color: #06A816;
+    text-align: center;
+}
+
+@media screen and (min-width:428px) {
+
+}
+
+@media screen and (min-width:834px) {
+
+}
+
+@media screen and (min-width:1280px) {
+
+}
+
+@media screen and (min-width:1440px) {
+
+}

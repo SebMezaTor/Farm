@@ -2,12 +2,249 @@
     GIT 337
     ASURITE: smezator */
 
+/* IMPORTED FONTS */
+
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (Public Domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+
 body {
     background-color: #ffffff;
     font-family: 'Habibi', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
+    line-height: 1;
+
+}
+
+ol ul {
+    list-style-type: none;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+
+:root {
+    font-family: "Habibi", serif;
+    font-size: 1.25em;
+    --green:#06A816;
+    --orange:#E75D02;
+    --black:#000000;
+    --white:#ffffff;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.fruits {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,auto);
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+#top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.vegetables {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,auto);
+    
+}
+
+.apple-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.orange-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.peaches-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.strawberries-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.blueberries-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.raspberries-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.cherries-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.pears-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.plums-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.grapes-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.watermelons-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.cantaloupes-caption {
+    position: relative;
+    display: inline-block;
+
+}
+
+.broccoli-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.lettuce-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.eggplant-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.spinach-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.bean-sprout-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.peas-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.bell-pepper-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.carrot-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.potato-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.cucumber-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.tomato-caption {
+    position: relative;
+    display: inline-block;
+}
+
+.radish-caption {
+    position: relative;
+    display: inline-block;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(0,0,0,0.5);
+
 }
 
 
@@ -15,19 +252,27 @@ body {
 header {
     background-color: #06A816;
     color: #ffffff;
-    padding: 5px;
+    padding: 18px;
     font-family: 'Irish Grover', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
-
+    
 }
 
-nav li {
-    display: inline-block;
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
     width: 125px;
     height: 25px;
+    list-style-type: none;
+    
+    
+    
+}
 
+nav ul li {
+    margin: 0 10px;
     
 }
 
@@ -44,6 +289,7 @@ nav a {
     color: white;
     padding: 10px;
     margin: 10px;
+    
 }
 
 h1 {
@@ -61,36 +307,52 @@ h3 {
     text-align: center;
 }
 
+
+
 footer {
     background-color: #06A816;
     color: #ffff;
-    padding: 15px;
-
+    padding: 10px;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
     
 }
 
+address {
+    float: right;
+}
+
+dl {
+    text-align: right;
+}
 
 
-
- 
 
 .copyright {
     color: #06A816;
     text-align: center;
 }
 
+
+
+/*Media Query - Small */
 @media screen and (min-width:428px) {
+   
+    
 
 }
-
+/*Media Query - Medium */
 @media screen and (min-width:834px) {
 
 }
-
+/*Media Query - Large*/
 @media screen and (min-width:1280px) {
 
 }
-
+/*Media Query - XL */
 @media screen and (min-width:1440px) {
 
 }
